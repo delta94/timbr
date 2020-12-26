@@ -1,0 +1,47 @@
+{
+  "name": "@timbr/react-native-widget",
+  "version": "0.1.0",
+  "description": "Timbr chat widget for React Native.",
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxshelepenok/timbr.git"
+  },
+  "scripts": {
+    "prepare": "bob build",
+    "pack": "npm pack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "query-string": "^6.13.1",
+    "react-native-webview": "^10.6.0"
+  },
+  "devDependencies": {
+    "@react-native-community/bob": "^0.16.2",
+    "@types/react": "^16.9.46",
+    "@types/react-native": "^0.63.8",
+    "react": "^16.13.1",
+    "react-native": "^0.63.2",
+    "typescript": "^3.9.7"
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}
